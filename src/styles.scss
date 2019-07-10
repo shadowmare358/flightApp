@@ -1,0 +1,115 @@
+/* You can add global styles to this file, and also import other style files */
+html{
+overflow-x: hidden;
+}
+
+.mat-dialog-container {
+    position: absolute;
+    width: 359px !important;
+    height: 230px !important;
+    background-color: white;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: justify;
+    overflow-x: hidden !important;
+    box-shadow: 0 22px 22px -7px rgb(23, 95, 95), 0 14px 38px 3px  rgba(10, 200, 200, 1), 0 9px 46px 8px rgba(0,0,0,.12) !important;
+    padding: 0 !important;
+    margin: 0;
+    // z-index: 10;
+}
+.cdk-overlay-container{
+    position: absolute;
+     width: 100%;
+    // height: 150px;
+    justify-content: center;
+    top: 20%;
+    left: calc(50% - 359px/2);
+    z-index: 11;
+
+}
+.mat-select-content{
+    // position: relative;
+    // top: 100px;
+    // left: calc(50% - 75px);
+    justify-content: center;
+    background-color: white;
+    overflow: hidden;
+    white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.mat-select-value{
+    width: 50px;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+.mat-dialog-content{
+    overflow: hidden !important;
+    padding: 0 !important;
+}
+.cdk-overlay-pane{
+  position: absolute;
+  width: 100px;
+  height: 300px;
+  top: 140px !important;
+  left: 90px !important;
+
+}
+#HeaderRow1{
+
+    font-family: SourceSansPro;
+    font-weight: bold;
+    font-size: 21px;
+    padding-left: 75px;
+    padding-top: 14px;
+
+}
+#HeaderRow2{
+
+    font-family: SourceSansPro;
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 75px;
+    padding-top: 5px;
+}
+#RegistrationLabel{
+    padding-left: 50px !important;
+    padding-top: 29px;
+}
+#Xbutton{
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    padding-right: 35px;
+    width: 0;
+    height: 0;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: white !important;
+}
+#HeaderModal{
+    height: 61px;
+    background-color: #f0f0f0
+}
+#FooterModal{
+   padding: 24px 0 !important;
+    height: 61px;
+    background-color: #f0f0f0
+}
+mat-form-field{
+    padding-left: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.mat-select-value:hover{
+    background-color: lightBlue;
+}
+.row-container:hover{
+    background-color: lightBlue;
+}
+#modalFooter{
+    background-color: #f0f0f0;
+}
+.mat-input-wrapper{
+    padding-left: 50px;
+}

@@ -1,0 +1,22 @@
+
+<div mat-dialog-content>
+  <div id="HeaderModal">
+<h1 id="HeaderRow1">{{data.flightNumber}} Registration</h1>
+<h2 id="HeaderRow2">{{data.scheduledDate | date:"dd/MM/yy"}} - {{data.scheduledDate | date:"hh:mm" }}</h2>
+<button id="Xbutton" mat-button (click)="onNoClick()">X</button>
+</div>
+<h3 id="RegistrationLabel">Registration</h3>
+<mat-form-field>
+<mat-select placeholder="{{data.registration}}"  [(value)]="data.registration" size="10" >
+  <mat-option  *ngFor="let option of data.list" [value]="option" >
+      {{option}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+</div>
+<div id="modalFooter">
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">CANCEL</button>
+  <button [mat-dialog-close]="data.registration">SAVE</button>
+</div>
+</div>

@@ -1,0 +1,10 @@
+<grid-header
+    [headers]="sampleHeaders"
+></grid-header>
+<div >
+    <data-row *ngFor="let row of rows" (click)="openDialog(row)"
+        [row]="row"
+    >
+    </data-row>
+
+</div>
